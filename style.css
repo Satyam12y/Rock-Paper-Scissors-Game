@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.choice {
+  background: rgba(255, 255, 255, 0.15);
+  border: 3px solid #fff;
+  border-radius: 50%;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.choice img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 40px 0;
+}
+
+.score {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.score p:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.msg-container {
+  background: #6c5ce7;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#msg {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .choices {
+    gap: 25px;
+  }
+
+  .choice img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .score-board {
+    gap: 30px;
+  }
+
+  .score p:first-child {
+    font-size: 1.5rem;
+  }
+
+  #msg {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .choices {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .choice img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .score-board {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #msg {
+    font-size: 1rem;
+  }
+}
+#reset-btn {
+  background: #0984e3;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#reset-btn:hover {
+  background: #74b9ff;
+  transform: scale(1.05);
+}
