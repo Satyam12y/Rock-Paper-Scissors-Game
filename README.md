@@ -15,7 +15,7 @@ Reset button to start a new game instantly
 Demo 🚀
 
 Try the live demo here:
-Live Demo
+Live Demo: https://satyam12y.github.io/Rock-Paper-Scissors-Game/
 
 Tech Stack 🛠️
 
